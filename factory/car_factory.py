@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from car import Car
 from engine.capulet_engine import CapuletEngine
 from engine.willoughby_engine import WilloughbyEngine
@@ -9,7 +11,7 @@ from battery.spindler_battery import SpindlerBattery
 class CarFactory:
     @staticmethod
     def create_calliope(current_date, last_service_date, current_mileage, last_service_mileage) -> Car:
-        engine = CapuletEngine(current_mileage, last_service_mileage)
+        engine = CapuletEngine(last_service_mileage, current_mileage)
         battery = NubbinBattery(last_service_date, current_date)
         calliope = Car(engine, battery)
         return calliope
@@ -29,14 +31,14 @@ class CarFactory:
         return palindrome
 
     @staticmethod
-    def create_rorschach(current_date, last_service_date, current_mileage, last_service_mileage):
+    def create_rorschach(current_date, last_service_date, current_mileage, last_service_mileage) -> Car:
         engine = WilloughbyEngine(last_service_mileage, current_mileage)
         battery = NubbinBattery(last_service_date, current_date)
         rorschach = Car(engine, battery)
         return rorschach
 
     @staticmethod
-    def create_thovex(current_date, last_service_date, current_mileage, last_service_mileage):
+    def create_thovex(current_date, last_service_date, current_mileage, last_service_mileage) -> Car:
         engine = CapuletEngine(last_service_mileage, current_mileage)
         battery = NubbinBattery(last_service_date, current_date)
         thovex = Car(engine, battery)
