@@ -1,11 +1,14 @@
 import unittest
 from datetime import datetime
+import sys
 
 from engine.model.calliope import Calliope
 from engine.model.glissade import Glissade
 from engine.model.palindrome import Palindrome
 from engine.model.rorschach import Rorschach
 from engine.model.thovex import Thovex
+
+sys.path.append('C:/Users/Admin.Varachit-PC/Desktop/Forage/Lyft/forage-lyft-starter-repo')
 
 
 class TestCalliope(unittest.TestCase):
@@ -185,4 +188,4 @@ class TestThovex(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(exit=False)
