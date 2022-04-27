@@ -1,8 +1,10 @@
 import unittest
-from datetime import datetime
 import sys
+import os
+from datetime import datetime
 
-sys.path.append('C:/Users/Admin.Varachit-PC/Desktop/Forage/Lyft/forage-lyft-starter-repo')
+ROOT_DIR = os.path.dirname(os.getcwd())
+sys.path.append(ROOT_DIR)
 
 from factory.car_factory import CarFactory
 from engine.model.calliope import Calliope
