@@ -100,4 +100,4 @@ all values in the tire wear array is greater than or equal to 3.
   [The Three Laws of TDD](http://www.butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd)
 
 ### Final Design
-![final_design.png](https://i.imgur.com/rJxqfIE.png)
+![final_design.png](https://i.imgur.com/mfpw46V.png)
